@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>Qserve.Core</AssemblyName></PropertyGroup>
+  <ItemGroup><ProjectReference Include="..\Qserve.Shared\Qserve.Shared.csproj" /></ItemGroup>
+</Project>

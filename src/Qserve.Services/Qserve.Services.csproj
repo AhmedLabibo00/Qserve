@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>Qserve.Services</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qserve.Core\Qserve.Core.csproj" />
+    <ProjectReference Include="..\Qserve.Data\Qserve.Data.csproj" />
+    <ProjectReference Include="..\Qserve.Printing\Qserve.Printing.csproj" />
+    <ProjectReference Include="..\Qserve.Audio\Qserve.Audio.csproj" />
+    <ProjectReference Include="..\Qserve.Localization\Qserve.Localization.csproj" />
+    <ProjectReference Include="..\Qserve.Shared\Qserve.Shared.csproj" />
+  </ItemGroup>
+</Project>

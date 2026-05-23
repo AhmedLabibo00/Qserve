@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><AssemblyName>Qserve.Data</AssemblyName></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qserve.Core\Qserve.Core.csproj" />
+    <ProjectReference Include="..\Qserve.Shared\Qserve.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.6" />
+  </ItemGroup>
+</Project>
