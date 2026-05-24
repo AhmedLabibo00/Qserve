@@ -1,0 +1,31 @@
+<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{StaticResource BrushBackground}">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="Input Controls / Key Mapping" Style="{StaticResource TitleText}"/>
+
+        <DataGrid Grid.Row="1" Margin="0,12,0,12" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Action" Binding="{Binding Action}"/>
+                <DataGridTextColumn Header="Assigned Key" Binding="{Binding Key}"/>
+                <DataGridTextColumn Header="Device" Binding="{Binding Device}"/>
+                <DataGridCheckBoxColumn Header="Enabled" Binding="{Binding Enabled}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
+            <Button Style="{StaticResource TouchButton}" Content="Listening… Press Any Key"/>
+            <Button Style="{StaticResource TouchButton}" Content="Import KeyMappings.json"/>
+            <Button Style="{StaticResource TouchButton}" Content="Export KeyMappings.json"/>
+            <Button Style="{StaticResource TouchButton}" Content="Reset Current Page"/>
+            <Button Style="{StaticResource TouchButton}" Content="Reset All Keys"/>
+            <Button Style="{StaticResource TouchButton}" Content="Restore Factory Defaults"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

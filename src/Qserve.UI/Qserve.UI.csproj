@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>Qserve.UI</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Qserve.Core\Qserve.Core.csproj" />
+    <ProjectReference Include="..\Qserve.Services\Qserve.Services.csproj" />
+    <ProjectReference Include="..\Qserve.Printing\Qserve.Printing.csproj" />
+    <ProjectReference Include="..\Qserve.Audio\Qserve.Audio.csproj" />
+    <ProjectReference Include="..\Qserve.Localization\Qserve.Localization.csproj" />
+    <ProjectReference Include="..\Qserve.Shared\Qserve.Shared.csproj" />
+  </ItemGroup>
+</Project>

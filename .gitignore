@@ -1,0 +1,22 @@
+# Build outputs
+bin/
+obj/
+
+# Databases
+*.db
+*.sqlite
+
+# Packaged/binary outputs
+*.exe
+*.dll
+*.msi
+*.zip
+
+# Runtime/generated data folders
+Backup/
+Archive/
+Voices/
+Bells/
+Logos/
+ProgramData/
+Generated/
