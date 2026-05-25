@@ -2,11 +2,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              Background="{StaticResource BrushBackground}">
     <Grid>
-        <Border Style="{StaticResource CardPanel}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Style="{StaticResource CardPanel}">
             <StackPanel>
-                <TextBlock Style="{StaticResource TitleText}" Text="{DynamicResource Settings}"/>
-                <TextBlock Style="{StaticResource BodyText}" Text="Touch-friendly responsive layout placeholder for Settings." Margin="0,12,0,0"/>
+                <TextBlock Text="Settings Security" Style="{StaticResource TitleText}"/>
+                <TextBlock Text="Enter password to access advanced controls" Style="{StaticResource BodyText}" Margin="0,8,0,0"/>
             </StackPanel>
         </Border>
+
+        <Grid Grid.Row="1" Margin="12">
+            <Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Style="{StaticResource CardPanel}">
+                <StackPanel>
+                    <TextBlock Text="Password Keypad" Style="{StaticResource HeaderText}"/>
+                    <UniformGrid Columns="3" Margin="0,10,0,0">
+                        <Button Style="{StaticResource TouchButton}" Content="1"/>
+                        <Button Style="{StaticResource TouchButton}" Content="2"/>
+                        <Button Style="{StaticResource TouchButton}" Content="3"/>
+                        <Button Style="{StaticResource TouchButton}" Content="4"/>
+                        <Button Style="{StaticResource TouchButton}" Content="5"/>
+                        <Button Style="{StaticResource TouchButton}" Content="6"/>
+                        <Button Style="{StaticResource TouchButton}" Content="7"/>
+                        <Button Style="{StaticResource TouchButton}" Content="8"/>
+                        <Button Style="{StaticResource TouchButton}" Content="9"/>
+                        <Button Style="{StaticResource TouchButton}" Content="Delete"/>
+                        <Button Style="{StaticResource TouchButton}" Content="0"/>
+                        <Button Style="{StaticResource TouchButton}" Content="Enter"/>
+                    </UniformGrid>
+                    <Button Style="{StaticResource TouchButton}" Content="Forgot Password (after 3 failed attempts)" Margin="0,12,0,0"/>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Column="1" Style="{StaticResource CardPanel}">
+                <StackPanel>
+                    <TextBlock Text="Security Settings" Style="{StaticResource HeaderText}"/>
+                    <CheckBox Content="Enable Password" Margin="0,8,0,0"/>
+                    <TextBlock Text="Change Password (4-10 digits)" Margin="0,8,0,0"/>
+                    <TextBox Height="42" Margin="0,4,0,0"/>
+                    <Button Style="{StaticResource TouchButton}" Content="Save New Password"/>
+                    <Button Style="{StaticResource TouchButton}" Content="Reset Password to 0000"/>
+                    <TextBlock Text="Last Change Date: --" Margin="0,8,0,0"/>
+                    <Separator Margin="0,8,0,8"/>
+                    <TextBlock Text="Protected Areas:" FontWeight="SemiBold"/>
+                    <TextBlock Text="Settings, Advanced Controls, Queue Reset, Counter Mapping, Audio Settings, Key Mapping, Language, Printing" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+        <TextBlock Grid.Row="2" Text="Premium touch layout • RTL/LTR supported • Smooth 200-300ms swipe/fade transitions" HorizontalAlignment="Center" Margin="0,8,0,8"/>
     </Grid>
 </UserControl>

@@ -29,3 +29,14 @@ Generated WPF UI-only artifacts with no backend, no database code, and no busine
 ## Notes
 - This phase includes XAML, styles, themes, localization dictionaries, and navigation shell markup only.
 - No code-behind logic, no services, no repositories, and no DB integration are included.
+
+## UI Revision — Multi Screen Dashboard + Settings Password
+- Home shell revised to a 3-page horizontal dashboard concept:
+  - Left: Analytics
+  - Center (default): Dashboard current queue focus
+  - Right: Services grid
+- Bottom navigation dots added with current page emphasis.
+- Swipe-left/right behavior represented in shell content structure and labels.
+- Settings security panel added with numeric keypad UI and forgot-password/reset affordances.
+- Security menu includes enable/change/reset/forgot/last-change placeholders.
+- Layout remains WPF touch-friendly, fullscreen-ready, Arabic/English-compatible structure.
